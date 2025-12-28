@@ -4,32 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML e CSS - Ativ. 01</title>
+    <title>HTML e CSS - Ativ. 02</title>
+    <style>
+        body {
+            background-color: gainsboro;
+        }
+
+        h1 {
+            background-color: aliceblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        h2 {
+            background-color: gray;
+            border: 2px solid black;
+        }
+
+        h3 {
+            background-color: ghostwhite;
+            border: 2px solid black;
+        }
+
+        p {
+            font-size: larger;
+        }
+
+        ul {
+            font-size: large;
+        }
+
+        img {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+            border: 3px solid black;
+        }
+
+        iframe {
+            border: 2px solid black;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Página web <HTML>
-
-            </HTML>
-        </h1>
+        <h1>Página web</h1>
         <h2>Criando uma página simples e semântica </h2>
+        <p>
+            Página web simples criada utilizando HTML e estilos inline incorporádos ao HEAD para estilização básica da
+            página.
+        </p>
     </header>
-    <nav>
+    <nav id="nav">
         <ul>
             <li>
-                <a href="">Nav</a>
+                <a href="#nav">Nav</a>
             </li>
             <li>
-                <a href="">Article</a>
+                <a href="#article">Article</a>
             </li>
             <li>
-                <a href="">Section</a>
+                <a href="#section">Section</a>
+            </li>
+            <li>
+                <a href="#midias">Mídias</a>
             </li>
         </ul>
     </nav>
     <main>
-        <article>
+        <article id="article">
             <h2>Article</h2>
             <p>"O Elemento HTML Article representa uma composição independente em um documento, página, aplicação, ou
                 site, ou que é destinado a ser distribuido de forma independente ou reutilizável, por exemplo, em
@@ -37,7 +83,7 @@
                 comentário enviado por um usuário, um gadget ou widget interativos, ou qualquer outra forma de conteúdo
                 independente." - MDN</p>
         </article>
-        <section>
+        <section id="section">
             <h3>Section - Como usar:</h3>
             <ul>
                 <li>Estrutura</li>
@@ -45,6 +91,16 @@
                 <li>Identificação</li>
                 <li>Hierarquia</li>
             </ul>
+        </section>
+        <section id="midias">
+            <h3>Mídias</h3>
+            <img src="https://geracaotech.iel-ce.org.br/wp-content/themes/geracaotech/images/logo-geracao-tech.png"
+                alt="Logo Geração Tech 3.0">
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CmFVWpLlA2c?si=fOG01ByWTH4z11Cs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </main>
 </body>
