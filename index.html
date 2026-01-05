@@ -4,103 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML e CSS - Ativ. 02</title>
-    <style>
-        body {
-            background-color: gainsboro;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NO:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML e CSS - Aplicando Flexbox</title>
 
-        h1 {
-            background-color: aliceblue;
-            border: 2px solid black;
-            display: flex;
-            justify-content: center;
-
-        }
-
-        h2 {
-            background-color: gray;
-            border: 2px solid black;
-        }
-
-        h3 {
-            background-color: ghostwhite;
-            border: 2px solid black;
-        }
-
-        p {
-            font-size: larger;
-        }
-
-        ul {
-            font-size: large;
-        }
-
-        img {
-            margin-left: 10px;
-            margin-bottom: 10px;
-            background-color: white;
-            border: 3px solid black;
-        }
-
-        iframe {
-            border: 2px solid black;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Página web</h1>
-        <h2>Criando uma página simples e semântica </h2>
-        <p>
-            Página web simples criada utilizando HTML e estilos inline incorporádos ao HEAD para estilização básica da
-            página.
-        </p>
-    </header>
-    <nav id="nav">
-        <ul>
-            <li>
-                <a href="#nav">Nav</a>
-            </li>
-            <li>
-                <a href="#article">Article</a>
-            </li>
-            <li>
-                <a href="#section">Section</a>
-            </li>
-            <li>
-                <a href="#midias">Mídias</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="home" id="home">
+        <header>
+            <div class="titulo">
+                <h1>HTML e CSS</h1>
+                <h2>Aplicando flexbox </h2>
+            </div>
+            <div class="p-header">
+                <p>
+                    Página web simples criada utilizando HTML e CSS. Tem como objetivo servir de atividade para o curso
+                    "Desenvolvedor Web Full Stack - Online - 3.0" do projeto Geração Tech 3.0. Seu apenas descreve as
+                    tags e recursos HTML e CSS utilizados paraa construção da página.
+                </p>
+            </div>
+        </header>
+        <nav>
+            <ul class="nav-bar">
+                <li>
+                    <a class="nav-item" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#article">Article</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#section">Section</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#midias">Mídias</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <main>
         <article id="article">
             <h2>Article</h2>
-            <p>"O Elemento HTML Article representa uma composição independente em um documento, página, aplicação, ou
+            <p class="p-article">"O Elemento HTML Article representa uma composição independente em um documento,
+                página, aplicação, ou
                 site, ou que é destinado a ser distribuido de forma independente ou reutilizável, por exemplo, em
                 sindicação. Este poderia ser o post de um fórum, um artigo de revista ou jornal, um post de um blog, um
                 comentário enviado por um usuário, um gadget ou widget interativos, ou qualquer outra forma de conteúdo
                 independente." - MDN</p>
         </article>
         <section id="section">
-            <h3>Section - Como usar:</h3>
+            <h3>Section - Para que serve:</h3>
             <ul>
-                <li>Estrutura</li>
-                <li>Conteúdo</li>
-                <li>Identificação</li>
-                <li>Hierarquia</li>
+                <div class="section-div">
+                    <div class="section-item">
+                        <li>
+                            <h4>Agrupar Conteúdo</h4>
+                            <p>Divide o conteúdo de uma página em blocos lógicos, como "Sobre Nós", "Serviços",
+                                "Notícias".
+                            </p>
+                        </li>
+                    </div>
+                    <div class="section-item">
+                        <li>
+                            <h4>Semântica</h4>
+                            <p>Ajuda a dar significado ao conteúdo, indicando que um grupo de elementos pertence a um
+                                tópico específico.</p>
+                        </li>
+                    </div>
+                    <div class="section-item">
+                        <li>
+                            <h4>SEO e Acessibilidade</h4>
+                            <p>Facilita para buscadores entenderem a estrutura da página e para leitores de tela
+                                navegarem pelo conteúdo.</p>
+                        </li>
+                    </div>
+                    <div class="section-item">
+                        <li>
+                            <h4>Estrutura</h4>
+                            <p>Define macroestruturas de um documento, sendo uma parte de uma estrutura maior ou
+                                contendo elementos menores, como article ou header.</p>
+                        </li>
+                    </div>
+                </div>
             </ul>
         </section>
         <section id="midias">
-            <h3>Mídias</h3>
-            <img src="https://geracaotech.iel-ce.org.br/wp-content/themes/geracaotech/images/logo-geracao-tech.png"
-                alt="Logo Geração Tech 3.0">
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CmFVWpLlA2c?si=fOG01ByWTH4z11Cs"
+            <h3 id="titulo-midias">Mídias</h3>
+            <p id="p-midias">Na aba de mídias resolvi acresentar como imagem os prints das requisições da atividadee.
+                Tambem preferi utilizar um iframe com a primeira aula ao vivo do curso como o video da atividade. Como
+                audio utilizei um resumo sobre HTML gerado utilizado IA.</p>
+
+            <h4>Primeira requisição</h4>
+            <img src="midias/primeira.png" alt="primeira requisição" width="70%">
+
+            <h4>Segunda requisição</h4>
+            <img src="midias/segunda.png" alt="segunda requisição" width="70%">
+
+            <h4>Terceira requisição</h4>
+            <img src="midias/terceira.png" alt="terceira requisição" width="70%">
+
+            <h4>Áudio</h4>
+            <audio src="midias/resumo-html.m4a" controls></audio>
+
+            <h4>Vídeo</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6NSe1afMqNE?si=1g9g-XGWrfNcukLZ"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </section>
     </main>
 </body>
